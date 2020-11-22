@@ -58,6 +58,40 @@
 
 -   초기 앱 개발 환경 설정 및 초기 셋팅과정에 시간이 많이 소요된다.
 
+## 프로젝트 생성 및 Simulator 구동
+
+### 프로젝트 생성 명령어
+
+> [공식사이트 : Creating a new application part](https://reactnative.dev/docs/environment-setup)
+
+-   `react native init [--version 0.65:버전정도] [프로젝트명/위치]`
+
+    or
+
+-   `npx react-native init [프로젝트명/위치]`
+
+### iOS 시뮬레이터 구동
+
+-   `npm start`
+-   `react-native run-ios`
+-   `react-native run-ios --simulator="iPhone 8 Plus"`
+
+    > 다른 기기에서 시뮬레이터를 실행시켜보고 싶을 때, 기기의 이름을 넣어주면 된다.
+
+-   시뮬레이터 단축키
+    -   `command + r` : refresh
+    -   `command + d` : debug menu
+    -   디버그 메뉴창에서 <u>enable fast fresh를 클릭</u>하면 수동적인 리로드 없이 작업한 내용이 바로 시뮬레이터에 반영된다. 반대로 <u>disable fast fresh를 클릭</u>하면 refrech를 해줘야 작업한 내용이 반영이 된다.
+
+### Android 시뮬레이터 구동
+
+-   시뮬레이터를 먼저 구동하고 App을 실행시킨다.(iOS의 경우는 App을 실행하면 시뮬레이터가 자동으로 실행된다.)
+-   `npm start`
+-   `react-native run-android`
+-   시뮬레이터 단축키
+    -   `double r` : refresh
+    -   `command / ctrl + m` or `shake device` : debug menu
+
 # Ref
 
 <details>
