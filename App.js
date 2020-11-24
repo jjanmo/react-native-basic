@@ -1,35 +1,42 @@
-import React, {Component} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import Header from './src/Header';
+import React, {useState} from 'react';
+import {View, StyleSheet} from 'react-native';
+import AddButton from './src/addButton';
+import Header from './src/header';
+import List from './src/list';
 
-class App extends Component {
-  state = {
-    name: 'jjanmo',
+const App = () => {
+  const [randomList, setRandomList] = useState([]);
+
+  const onAddNumber = () => {
+    if (checkList()) {
+      alert('Too Much 😜');
+      return false;
+    }
+    const newNumber = Math.floor(Math.random() * 100) + 1;
+    setRandomList([...randomList, newNumber]);
   };
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Header name={this.state.name} />
-      </View>
-    );
-  }
-}
+  const onDeleteNumber = (position) => {
+    const newList = randomList.filter((number, index) => index !== position);
+    setRandomList(newList);
+  };
+
+  const checkList = () => randomList.length > 10;
+
+  return (
+    <View style={styles.container}>
+      <Header name={'random number'} />
+      <AddButton onAddNumber={onAddNumber} />
+      <List list={randomList} onDeleteNumber={onDeleteNumber} />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    color: 'white',
-    backgroundColor: 'dodgerblue',
-    fontSize: 30,
-    fontWeight: 'bold',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 20,
+    paddingTop: 20,
   },
 });
+
 export default App;
