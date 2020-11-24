@@ -94,6 +94,17 @@
 
 ## React Native Components
 
+### Core Components
+
+### Style을 주는 방법
+
+1. inline style
+2. StyleSheet.create({})
+
+### Touch Event
+
+> [TouchableOpacity](https://reactnative.dev/docs/touchableopacity)
+
 # Ref
 
 <details>
