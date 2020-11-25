@@ -11,7 +11,6 @@ const AddButton = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     textAlign: 'center',
     marginVertical: 10,
   },

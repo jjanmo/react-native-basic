@@ -19,13 +19,12 @@ const List = ({list, onDeleteNumber}) => {
 const styles = StyleSheet.create({
   item: {
     backgroundColor: '#95a5a6',
-    justifyContent: 'center',
-    alignContent: 'center',
+    // justifyContent: 'center',
+    alignItems: 'center',
     marginVertical: 5,
+    width: '100%',
   },
   text: {
-    width: '100%',
-    textAlign: 'center',
     color: 'white',
   },
 });
