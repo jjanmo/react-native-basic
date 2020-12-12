@@ -117,25 +117,45 @@
 
 > [React Navigation](https://reactnavigation.org/) : 설치 관련 내용은 공식사이트 참조
 
-### Stack Navigation
+### Stack Navigation : `react-native-stack`
 
-- Move to Screen
-- Pass Parameters
-- Header bar
+> 4가지 기본개념
+
+1. CreateStackNavigator
+2. RouteConfigs
+3. StackNavigationConfig
+4. navigationOptions
+
+> 설치 패키지
+
+- react-native-gesture-handler : 모바일 환경이기 때문에 터치 인터페이스를 로드해주는 패키지
+- react-navigation
+- react-navigation-stack
+
+>
+
+### Tab Navigation : `react-navigation-tab`
+
+> 3가지 tab library
+
+1. createBottomTabNavigator : 화면 하단에 위치
+2. createMaterialBottomTabNavigator : 화면 하단에 위치, 기존의 createBottomTabNavigator 보다 더 많은 스타일링 기능 구현 가능
+3. createMaterialTopTabNavigator : 화면 상단에 위치
 
 ### Drawer Navigation
 
-### Tab Navigation
-
 # Ref
 
-<details>
-<summary>React Native의 작동원리 관련</summary>
+- [React Native - Basic 강의](https://www.inflearn.com/course/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EA%B8%B0%EC%B4%88)
 
-[잠깐…내가 만든 리액트 네이티브 앱이 시작하면 무슨일이 일어나는거지? — 리액트 네이티브 안을 들여다보기](https://medium.com/@kyo504/%EB%B2%88%EC%97%AD-%EC%9E%A0%EA%B9%90-%EB%82%B4%EA%B0%80-%EB%A7%8C%EB%93%A0-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1%EC%9D%B4-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B4-%EB%AC%B4%EC%8A%A8%EC%9D%BC%EC%9D%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%EA%B1%B0%EC%A7%80-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%88%EC%9D%84-%EB%93%A4%EC%97%AC%EB%8B%A4%EB%B3%B4%EA%B8%B0-2b4a9bce79a2)
+- [ReactNative Tutorials](https://jeffgukang.github.io/react-native-tutorial/)
 
-[React Native 이론](https://evanjin.dev/development/react-native-%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD%EB%93%A4/#react-native-%EC%9D%B4%EB%A1%A0)
+- [ReactNative 튜토리얼](https://g6ling.gitbooks.io/react-native-tutorial-korean/content/)
 
-[React Native는 어떻게 작동합니까?](http://www.devh.kr/2020/How-React-Native-Works/)
+`React Native의 작동원리 관련:`
 
-</details>
+- [잠깐…내가 만든 리액트 네이티브 앱이 시작하면 무슨일이 일어나는거지? — 리액트 네이티브 안을 들여다보기](https://medium.com/@kyo504/%EB%B2%88%EC%97%AD-%EC%9E%A0%EA%B9%90-%EB%82%B4%EA%B0%80-%EB%A7%8C%EB%93%A0-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1%EC%9D%B4-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B4-%EB%AC%B4%EC%8A%A8%EC%9D%BC%EC%9D%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%EA%B1%B0%EC%A7%80-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%88%EC%9D%84-%EB%93%A4%EC%97%AC%EB%8B%A4%EB%B3%B4%EA%B8%B0-2b4a9bce79a2)
+
+- [React Native 이론](https://evanjin.dev/development/react-native-%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD%EB%93%A4/#react-native-%EC%9D%B4%EB%A1%A0)
+
+- [React Native는 어떻게 작동합니까?](http://www.devh.kr/2020/How-React-Native-Works/)

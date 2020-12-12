@@ -1,39 +1,28 @@
-import React, {useState} from 'react';
-import {View, StyleSheet, ScrollView} from 'react-native';
-import AddButton from './src/addButton';
-import Header from './src/header';
-import List from './src/list';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import HomeScreen from './src/screens/HomeScreen';
+import SettingScreen from './src/screens/SettingScreen';
+
+const Tab = createBottomTabNavigator();
 
 const App = () => {
-  const [randomList, setRandomList] = useState([]);
-
-  const onAddNumber = () => {
-    const newNumber = Math.floor(Math.random() * 100) + 1;
-    setRandomList([...randomList, newNumber]);
-  };
-
-  const onDeleteNumber = (position) => {
-    const newList = randomList.filter((number, index) => index !== position);
-    setRandomList(newList);
-  };
-
   return (
-    <View style={styles.container}>
-      <Header name={'random number'} />
-      <AddButton onAddNumber={onAddNumber} />
-      <ScrollView style={{width: '100%'}}>
-        <List list={randomList} onDeleteNumber={onDeleteNumber} />
-      </ScrollView>
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen
+          name="HomeScreen"
+          component={HomeScreen}
+          options={{title: 'Home'}}
+        />
+        <Tab.Screen
+          name="SettingScreen"
+          component={SettingScreen}
+          options={{title: 'Setting'}}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 20,
-    alignItems: 'center',
-  },
-});
 
 export default App;
