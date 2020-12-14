@@ -92,7 +92,16 @@
   - `double r` : refresh
   - `command / ctrl + m` or `shake device` : debug menu
 
-## React Native Components
+## Contents
+
+> 만들면서 공부하는 리액트 네이티브 기본
+
+|  #  |   Contents    |
+| :-: | :-----------: |
+| 01  |    Counter    |
+| 02  | UpDown Number |
+
+## React Native 중요개념 정리
 
 ### Core Components
 
@@ -146,11 +155,17 @@
 
 # Ref
 
+`Main:`
+
 - [React Native - Basic 강의](https://www.inflearn.com/course/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EA%B8%B0%EC%B4%88)
 
 - [ReactNative Tutorials](https://jeffgukang.github.io/react-native-tutorial/)
 
 - [ReactNative 튜토리얼](https://g6ling.gitbooks.io/react-native-tutorial-korean/content/)
+
+- [스무디 한 잔 마시며 끝내는 React Native - 책](http://www.yes24.com/Product/Goods/82895471?OzSrank=4)
+
+<br/>
 
 `React Native의 작동원리 관련:`
 
