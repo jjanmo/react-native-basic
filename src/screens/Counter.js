@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import HomeButton from '../components/HomeButton';
 
-const Counter = () => {
+const Counter = ({navigation}) => {
   const [count, setCount] = useState(0);
 
   const onIncrease = () => setCount(count + 1);
@@ -19,6 +20,7 @@ const Counter = () => {
           <Image style={styles.image} source={require('../assets/minus.png')} />
         </TouchableOpacity>
       </View>
+      <HomeButton navigator={navigation.navigate} />
     </View>
   );
 };

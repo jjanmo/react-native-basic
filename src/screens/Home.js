@@ -1,14 +1,19 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {View, Button, StyleSheet} from 'react-native';
 
 const Home = ({navigation}) => (
   <View style={styles.container}>
-    <Text>This is Home</Text>
     <Button
       title="Counter"
       style={styles.navigator}
       color={'#4834d4'}
       onPress={() => navigation.navigate('Counter')}
+    />
+    <Button
+      title="Practice"
+      style={styles.navigator}
+      color={'#4834d4'}
+      onPress={() => navigation.navigate('Practice')}
     />
   </View>
 );
@@ -20,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   navigator: {
-    marginVertical: 100,
+    marginTop: 10,
   },
 });
 
