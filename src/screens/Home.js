@@ -1,19 +1,18 @@
 import React from 'react';
-import {View, Button, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import Link from '../components/Link';
 
 const Home = ({navigation}) => (
   <View style={styles.container}>
-    <Button
-      title="Counter"
-      style={styles.navigator}
-      color={'#4834d4'}
-      onPress={() => navigation.navigate('Counter')}
+    <Link
+      navigator={navigation.navigate}
+      destination="Counter"
+      color="#4834d4"
     />
-    <Button
-      title="Practice"
-      style={styles.navigator}
-      color={'#4834d4'}
-      onPress={() => navigation.navigate('Practice')}
+    <Link
+      navigator={navigation.navigate}
+      destination="Practice"
+      color="#ff7979"
     />
   </View>
 );
@@ -21,11 +20,8 @@ const Home = ({navigation}) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-  },
-  navigator: {
-    marginTop: 10,
+    paddingVertical: 20,
   },
 });
 
