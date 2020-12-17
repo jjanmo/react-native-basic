@@ -14,6 +14,11 @@ const Home = ({navigation}) => (
       destination="Practice"
       color="#ff7979"
     />
+    <Link
+      navigator={navigation.navigate}
+      destination="FlexboxWithAlligator"
+      color="#16a085"
+    />
   </View>
 );
 
