@@ -1,39 +1,38 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import styled from 'styled-components/native';
 
-const CustomButton = ({text, handler}) => {
+const Container = styled(View)`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Button = styled(TouchableOpacity)`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: ${(props) => props.backgroundColor};
+  padding: 10px 25px;
+`;
+
+const ButtonText = styled(Text)`
+  color: #fff;
+  font-size: 18px;
+`;
+
+const CustomButton = ({text, backgroundColor, handler}) => {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.button}
+    <Container>
+      <Button
+        backgroundColor={backgroundColor}
         activeOpacity={0.7}
         onPress={() => handler()}>
-        <Text style={styles.text}>{text}</Text>
-      </TouchableOpacity>
-    </View>
+        <ButtonText>{text}</ButtonText>
+      </Button>
+    </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 80,
-  },
-  button: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10,
-    backgroundColor: '#a29bfe',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
-  text: {
-    color: '#fff',
-    fontSize: 18,
-  },
-});
 
 export default CustomButton;

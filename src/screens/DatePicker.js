@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Alert} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
-import Link from '../components/Link';
 import {getLastDay} from '../utils/functions';
 import HomeButton from '../components/HomeButton';
 import CustomButton from '../components/CustomButton';
@@ -18,7 +17,7 @@ const DatePicker = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerContainer}>
-        <Text style={styles.header}>Select Your BirthDay ☀️</Text>
+        <Text style={styles.header}>Select your BIRTH-DAY 🎂</Text>
       </View>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>Month</Text>
@@ -29,8 +28,7 @@ const DatePicker = ({navigation}) => {
           selectedValue={`${month}`}
           style={styles.monthPicker}
           onValueChange={(value, index) => setMonth(value)}
-          mode="dropdown"
-          prompt="Month">
+          mode="dropdown">
           {monthArray.map((month, index) => (
             <Picker.Item key={index} label={`${month}`} value={`${month}`} />
           ))}
@@ -47,6 +45,7 @@ const DatePicker = ({navigation}) => {
       </View>
       <CustomButton
         text={'Press Here 😜'}
+        backgroundColor="#fdcb6e"
         handler={() => Alert.alert(`Your birth day is ${month} / ${date}`)}
       />
       <HomeButton navigator={navigation.navigate} />
