@@ -19,6 +19,11 @@ const Home = ({navigation}) => (
       destination="FlexboxWithAlligator"
       color="#16a085"
     />
+    <Link
+      navigator={navigation.navigate}
+      destination="DatePicker"
+      color="#f39c12"
+    />
   </View>
 );
 

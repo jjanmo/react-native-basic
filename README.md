@@ -92,33 +92,14 @@
   - `double r` : refresh
   - `command / ctrl + m` or `shake device` : debug menu
 
-## Contents
-
-> 만들면서 공부하는 리액트 네이티브 기본
-
-|  #  |   Contents    |
-| :-: | :-----------: |
-| 01  |    Counter    |
-| 02  | UpDown Number |
-
 ## React Native 중요개념 정리
 
-### Core Components
+### Core Components & APIs
 
 ### Style을 주는 방법
 
 1. inline style
 2. StyleSheet.create({})
-
-### Touch Event & Button
-
-> [TouchableOpacity](https://reactnative.dev/docs/touchableopacity)
-
-> Random Number App
-
-### ScrollView & TextInput
-
-> Simple TodoApp
 
 ## React Navigation
 
@@ -152,6 +133,15 @@
 3. createMaterialTopTabNavigator : 화면 상단에 위치
 
 ### Drawer Navigation
+
+## Miniprojects
+
+> 만들면서 공부하잣!! 🚀 (~~projects 는 아니고 samples 나 examples~~)
+
+|  #  |   Contents    |
+| :-: | :-----------: |
+| 01  |    Counter    |
+| 02  | UpDown Number |
 
 # Ref
 
