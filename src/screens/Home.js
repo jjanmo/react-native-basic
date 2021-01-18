@@ -24,6 +24,11 @@ const Home = ({navigation}) => (
       destination="DatePicker"
       color="#f39c12"
     />
+    <Link
+      navigator={navigation.navigate}
+      destination="StyleSlider"
+      color="#f39c12"
+    />
   </View>
 );
 
