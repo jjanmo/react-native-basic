@@ -7,6 +7,7 @@ import Practice from './src/screens/Practice';
 import FlexboxWithAlligator from './src/screens/FlexboxWithAlligator';
 import DatePicker from './src/screens/DatePicker';
 import StyleSlider from './src/screens/StyleSlider';
+import AnimationScreen from './src/screens/AnimationScreen';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ const App = () => {
           component={FlexboxWithAlligator}
         />
         <Stack.Screen name="StyleSlider" component={StyleSlider} />
+        <Stack.Screen name="AnimationScreen" component={AnimationScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
