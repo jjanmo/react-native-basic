@@ -136,6 +136,10 @@ Low level Explanation(기계적 관점에서의 설명)
 
 > 이 자체만으로 큰 내용이라 따로 [문서](./docs/rn-navigation.md)를 만들어서 정리한다.
 
+<br />
+
 ## Phone Resource
+
+- Image Picker
 
 ## Animation

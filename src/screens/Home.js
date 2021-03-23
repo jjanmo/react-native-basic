@@ -34,6 +34,11 @@ const Home = ({navigation}) => (
       destination="AnimationScreen"
       color="#9b59b6"
     />
+    <Link
+      navigator={navigation.navigate}
+      destination="PhoneResource"
+      color="#7ed6df"
+    />
   </View>
 );
 
