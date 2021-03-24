@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text, StyleSheet, View} from 'react-native';
-import ImagePicker from 'react-native-image-picker';
+import {StyleSheet, View} from 'react-native';
 import MyImagePicker from './MyImagePicker';
 
 const PhoneResource = () => {
