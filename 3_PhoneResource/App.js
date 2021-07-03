@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import MyImagePicker from './MyImagePicker';
+import MyImagePicker from './src/MyImagePicker';
 
-const PhoneResource = () => {
+const App = () => {
   return (
     <View style={styles.container}>
       <MyImagePicker />
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PhoneResource;
+export default App;
