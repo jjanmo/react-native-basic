@@ -13,7 +13,6 @@
 2308 리액트 네이티브 정리해보기!
 
 </details>
-<br/>
 
 ## Tutorials
 
