@@ -15,22 +15,17 @@
 </details>
 <br/>
 
-<details>
-  <summary>2021년 10월</summary>
-
-처음 이 프로젝트를 시작할 때는 단순히 회사에서 리액트 네이티브를 통해 개발하는데 도움을 받고자 [강의](https://www.inflearn.com/course/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EA%B8%B0%EC%B4%88)를 들으면서 배운 내용을 정리하는 것으로 시작했다. 하지만 사람의 욕심은 끝이 없고... 같은 실수를 반복하는 법. 또 다시 시작된 나의 허황된 꿈(?)으로 이 프로젝트는 리액트 네이티브에 대한 **필수적인 내용**을 정리하고 이를 바탕으로 **작은 스니펫**을 만들어보는 프로젝트로 변모하게 되었다. 그러나, 역시 프로젝트의 끝은 점점 멀어지게 되었다. 그렇게 몇 개월 동안 회사에서 리액트 네이티브를 갈고 닦으면서(?) 예전보다는 익숙한 상태가 되었다. 😎 그래서 다시 이 프로젝트의 목표를 끝마치기 위해서 전체적인 리팩토링과 무엇을 할지에 대한 목표 재설정을 하였다.
-
-</details>
-
 ## Tutorials
 
--
+> 참고자료 : [강의](https://www.inflearn.com/course/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EA%B8%B0%EC%B4%88) / ReactNative 관련 공식문서들
+
+- `core-components` directory
 
 ## Summary
 
 > 리액트 네이티브에 관련하여 정리해보기!
 
-- [앱 개발의 종류](/docs/app-dev.md)
+- [앱 개발에 대해서](/docs/app-dev.md)
 
 - [리액트 네이티브 아키텍쳐](/docs/rn-architecture.md)
 
@@ -40,8 +35,8 @@
 
 - [리액트 네이티브 애니메이션](/docs/rn-animation.md)
 
-- [리액트 네이티브의 CodePush]()
+- [리액트 네이티브의 CodePush](/docs/rn-codepush.md)
 
-- [리액트 네이티브의 번들링, 빌드, 배포]()
+- [리액트 네이티브의 번들링, 빌드, 배포](/docs/rn-build-deploy.md)
 
 - [리액트 네이티브 명령어 정리](/docs/rn-command.md)
